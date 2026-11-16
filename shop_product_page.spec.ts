@@ -7,9 +7,10 @@ import { category, priceFilter, productTabs, relatedProductsTitle } from './data
 // accepting cookies, switching to English (HomePage.open()) and opening the category from the top menu.
 test.describe('Shop and product page', () => {
   let shop: ShopPage;
+  let home: HomePage;
 
   test.beforeEach(async ({ page }) => {
-    const home = new HomePage(page);
+    home = new HomePage(page);
     shop = new ShopPage(page);
     await home.open();
     await shop.openFromMenu(home);
@@ -44,11 +45,16 @@ test.describe('Shop and product page', () => {
     await shop.openProduct(card);
 
     const product = new ProductDetailPage(page);
+    // opening a product reloads the page, which sometimes comes back untranslated: translate again
+    const translated = await expect(page.locator('html')).toHaveClass(/translated-ltr/, { timeout: 5_000 }).then(() => true, () => false);
+    if (!translated) await home.switchToEnglish();
     await expect(product.title).toHaveText(name, { ignoreCase: true });
 
     const option = await product.chooseFirstOption();
     expect(option).not.toBe('');
-    await expect(product.measure).toContainText(`Measure: ${option}`);
+    // The attribute name depends on the product ("Measure", "Gauge", ...), so check the "<name>: <option>" format
+    const escaped = option.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    await expect(product.measure).toHaveText(new RegExp(`^\\s*\\S[^:]*:\\s*${escaped}\\s*$`));
 
     for (const tab of productTabs) {
       await expect(product.tab(tab), `tab "${tab}"`).toBeVisible();

@@ -1,19 +1,22 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Response } from '@playwright/test';
 import { HomePage, currentPath } from './pages/HomePage';
 
-// "Certificates" page (/certificati/): every certificate is a button linking to a PDF.
+// "Certificates" page (/certificati/): every certificate is a button that opens, in a new tab, either a PDF
+// (Kila Needles) or the manufacturer's certificates page (Tremun).
 const certificates = {
   path: '/certificati/',
   footerLinkText: 'Certificates',
   browserTitle: 'Certificates - PiercingMed',
   heading: 'Certificates',
   items: [
-    { title: 'Titanium certificate', file: '/wp-content/uploads/2022/07/Certificate-Tremun.pdf' },
+    { title: 'Titanium certificate', file: '/wp-content/uploads/2022/07/Certificate-Tremun.pdf', link: 'https://tremunpiercing.com/certificates/' },
     { title: 'Kila Needles conformity', file: '/wp-content/uploads/certificati/kilaneedles-conformity.pdf' },
     { title: 'Kila Needles manual IT-EN-ES', file: '/wp-content/uploads/certificati/kilaneedles-Manual_EN.pdf' },
-    { title: 'Certify Italian Tremun', file: '/wp-content/uploads/certificati/Tremun-Certificate-IT.pdf' },
+    { title: 'Certify Italian Tremun', file: '/wp-content/uploads/certificati/Tremun-Certificate-IT.pdf', link: 'https://tremunpiercing.com/certificates/' },
   ],
 };
+
+const linkSelector = 'a[href$=".pdf"], a[href^="https://tremunpiercing.com/certificates"]';
 
 test.describe('Certificates page', () => {
   test.beforeEach(async ({ page }) => {
@@ -31,47 +34,41 @@ test.describe('Certificates page', () => {
     await expect(page.locator('h1')).toHaveText(certificates.heading, { ignoreCase: true });
   });
 
-  test('all certificates are listed with a download link to a PDF', async ({ page }) => {
-    const links = page.locator('a[href$=".pdf"]');
+  test('all certificates are listed with a download link (PDF or manufacturer page)', async ({ page }) => {
+    const links = page.locator(linkSelector);
     await expect(links).toHaveCount(certificates.items.length);
     for (const [i, item] of certificates.items.entries()) {
       await expect(page.getByText(new RegExp(`^\\s*${item.title}\\s*$`, 'i')), item.title).toBeVisible();
-      await expect(links.nth(i)).toHaveAttribute('href', new RegExp(`${item.file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`));
+      const expected = item.link ?? new URL(item.file, page.url()).href;
+      await expect(links.nth(i), item.title).toHaveAttribute('href', expected);
+      expect(expected).not.toContain('/staging');
       await expect(links.nth(i)).toHaveAttribute('target', '_blank');
     }
   });
 
-  // The correct files (without the "/staging" part of the path) exist and are PDFs.
-  for (const item of certificates.items) {
-    test(`correct link of "${item.title}" serves a PDF`, async ({ page }) => {
-      const response = await page.request.get(item.file);
-      expect(response.status(), item.file).toBe(200);
-      expect(response.headers()['content-type']).toContain('application/pdf');
-    });
-  }
-
-  // KNOWN SITE DEFECT: the download links point to /staging/wp-content/... which returns 404.
-  // test.fail() turns red once the links are fixed: then remove test.fail() from these two tests.
-  test('download links do not contain "/staging"', async ({ page }) => {
-    test.fail(true, 'Certificate links contain /staging and lead to a 404 page');
-    const hrefs = await page.locator('a[href$=".pdf"]').evaluateAll((a) => a.map((x) => (x as HTMLAnchorElement).href));
-    expect(hrefs).toHaveLength(certificates.items.length);
-    for (const [i, item] of certificates.items.entries()) {
-      expect(hrefs[i], item.title).toBe(new URL(item.file, page.url()).href);
-    }
-  });
-
+  // Each certificate opens its target in a new tab: a PDF or the manufacturer page.
   for (const [i, item] of certificates.items.entries()) {
-    test(`clicking "${item.title}" opens the PDF`, async ({ page }) => {
-      test.fail(true, 'Certificate links contain /staging and lead to a 404 page');
+    test(`clicking "${item.title}" opens ${item.link ? 'the manufacturer page' : 'the PDF'}`, async ({ page, context }) => {
+      const expected = item.link ?? new URL(item.file, page.url()).href;
+      // the target opens in a new tab, so listen to responses of the whole browser context
+      const responses: Response[] = [];
+      context.on('response', (r) => responses.push(r));
       const popupPromise = page.waitForEvent('popup');
-      const responsePromise = page.waitForResponse((r) => r.url().endsWith('.pdf'));
-      await page.locator('a[href$=".pdf"]').nth(i).click();
+      await page.locator(linkSelector).nth(i).click();
       const popup = await popupPromise;
-      const response = await responsePromise;
-      await popup.close();
-      expect(response.status(), response.url()).toBe(200);
+      await popup.waitForLoadState('commit').catch(() => {}); // a PDF may not fire the usual load events
+      await expect.poll(() => responses.some((r) => r.url() === expected), { message: `response for ${expected}` }).toBe(true);
+      const response = responses.find((r) => r.url() === expected)!;
+      expect(response.status(), expected).toBe(200);
       expect(response.url()).not.toContain('/staging');
+      if (item.link) {
+        expect(response.headers()['content-type']).toContain('text/html');
+        await expect.poll(() => popup.url()).toContain('tremunpiercing.com/certificates');
+        await expect(popup.locator('body')).not.toContainText(/page not found|404/i);
+      } else {
+        expect(response.headers()['content-type']).toContain('application/pdf');
+      }
+      await popup.close();
     });
   }
 });

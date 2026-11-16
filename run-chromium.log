@@ -1,0 +1,1170 @@
+◇ injected env (3) from .env
+
+Running 66 tests using 4 workers
+
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+  ok  1 [chromium] › homepage.spec.ts:62:7 › Homepage - header and main menu › header shows logo, menu, search, account and cart (37.7s)
+  ok  4 [chromium] › homepage.spec.ts:72:7 › Homepage - header and main menu › logo link leads to the homepage (38.1s)
+  ok  2 [chromium] › homepage.spec.ts:20:7 › Homepage - cookies and language › cookie banner is shown and "Accept" dismisses it for good (38.4s)
+  ok  3 [chromium] › homepage.spec.ts:37:7 › Homepage - cookies and language › footer offers 4 languages and switching to English translates the page (38.7s)
+  ok  5 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Who We Are" opens /chi-siamo/ (20.5s)
+  ok  6 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Piercing" opens /categoria-prodotto/jewelry/ (21.8s)
+  ok  8 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Equipment" opens /categoria-prodotto/tools/ (21.9s)
+  ok  7 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Sharp" opens /categoria-prodotto/needles/ (22.6s)
+  ok  9 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Aftercare" opens /categoria-prodotto/aftercare/ (33.9s)
+  ok 12 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Offers" opens /offerte/ (32.3s)
+  x  10 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Hygiene" opens /categoria-prodotto/hygiene-and-supplies/ (36.7s)
+  x  11 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "CLAP!" opens /espositore-clap/ (37.5s)
+  ok 14 [chromium] › homepage.spec.ts:101:9 › Homepage - header and main menu › "Piercing" dropdown: first sub-menu item opens its page (6.8s)
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+  ok 15 [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Sharp" dropdown lists working sub-menu links (11.5s)
+  ok 17 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "CLAP!" opens /espositore-clap/ (retry #1) (10.2s)
+  x  13 [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Piercing" dropdown lists working sub-menu links (20.8s)
+  ok 18 [chromium] › homepage.spec.ts:101:9 › Homepage - header and main menu › "Sharp" dropdown: first sub-menu item opens its page (6.8s)
+◇ injected env (0) from .env
+  ok 20 [chromium] › homepage.spec.ts:101:9 › Homepage - header and main menu › "Equipment" dropdown: first sub-menu item opens its page (9.7s)
+  ok 21 [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Piercing" dropdown lists working sub-menu links (retry #1) (10.5s)
+  x  16 [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Hygiene" opens /categoria-prodotto/hygiene-and-supplies/ (retry #1) (24.5s)
+◇ injected env (0) from .env
+  ok 22 [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Hygiene" dropdown lists working sub-menu links (8.3s)
+  x  19 [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Equipment" dropdown lists working sub-menu links (17.7s)
+  ok 23 [chromium] › homepage.spec.ts:101:9 › Homepage - header and main menu › "Hygiene" dropdown: first sub-menu item opens its page (8.1s)
+◇ injected env (0) from .env
+  ok 24 [chromium] › homepage.spec.ts:109:7 › Homepage - header and main menu › account icon opens the My Account page (12.7s)
+  ok 25 [chromium] › homepage.spec.ts:114:7 › Homepage - header and main menu › cart icon opens the cart page and shows an empty counter (10.0s)
+  ok 27 [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Equipment" dropdown lists working sub-menu links (retry #1) (10.9s)
+  x  26 [chromium] › homepage.spec.ts:129:7 › Homepage - search › search icon reveals the search field (18.3s)
+◇ injected env (0) from .env
+  ok 30 [chromium] › homepage.spec.ts:156:7 › Homepage - search › searching for a non-existing product shows the "no products" notice (11.1s)
+  ok 32 [chromium] › homepage.spec.ts:172:7 › Homepage - content links › hero section shows title and call-to-action button (6.3s)
+  ok 31 [chromium] › homepage.spec.ts:129:7 › Homepage - search › search icon reveals the search field (retry #1) (9.0s)
+  x  29 [chromium] › homepage.spec.ts:147:7 › Homepage - search › clicking a search result opens its product page (25.0s)
+  ok 33 [chromium] › homepage.spec.ts:177:7 › Homepage - content links › hero button "Discover our products" opens the shop (7.1s)
+◇ injected env (0) from .env
+  ok 34 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Jewelry banner" opens /categoria-prodotto/jewelry/ (9.2s)
+  x  28 [chromium] › homepage.spec.ts:136:7 › Homepage - search › searching for "ring" returns matching products (23.0s)
+  ok 35 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Dermal banner" opens /tag-prodotto/dermal/ (10.6s)
+◇ injected env (0) from .env
+  ok 36 [chromium] › homepage.spec.ts:147:7 › Homepage - search › clicking a search result opens its product page (retry #1) (19.1s)
+  ok 38 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "CLAP display banner" opens /espositore-clap/ (14.0s)
+  ok 39 [chromium] › homepage.spec.ts:136:7 › Homepage - search › searching for "ring" returns matching products (retry #1) (14.3s)
+  ok 41 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Autoclave banner" opens /autoclave-sterihero/ (8.9s)
+  x  37 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare banner" opens /categoria-prodotto/aftercare/ (26.8s)
+  ok 42 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Tremun brand banner" opens /brand/tremun/ (7.2s)
+◇ injected env (0) from .env
+  ok 43 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Secret Fauna banner" opens /categoria-prodotto/jewelry/secret-fauna/ (8.6s)
+  ok 44 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Shanga banner" opens /shanga-piercing/ (10.6s)
+  ok 45 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare banner" opens /categoria-prodotto/aftercare/ (retry #1) (12.5s)
+  ok 46 [chromium] › homepage.spec.ts:192:7 › Homepage - content links › "Latest additions" shows products and each title links to a product page (10.3s)
+  x  40 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare page banner" opens /aftercare-page/ (22.1s)
+◇ injected env (0) from .env
+  ok 49 [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Request reseller access" opens /registrati-come-rivenditore/ (11.2s)
+  ok 48 [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Dealer Map" opens /rivenditori/ (11.6s)
+  ok 52 [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Become a partner" opens /registrati-come-partner/ (7.7s)
+  x  50 [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare page banner" opens /aftercare-page/ (retry #1) (18.7s)
+  x  47 [chromium] › homepage.spec.ts:201:7 › Homepage - content links › clicking a "Latest additions" product opens its product page (30.2s)
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+  x  51 [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Reseller account" opens /mio-account/ (15.6s)
+◇ injected env (0) from .env
+  x  53 [chromium] › homepage.spec.ts:220:7 › Homepage - content links › "Some of our brands" slider links to every brand page (18.7s)
+◇ injected env (0) from .env
+  x  54 [chromium] › homepage.spec.ts:231:7 › Homepage - content links › clicking the first brand in the slider opens the brand page (16.5s)
+◇ injected env (0) from .env
+  x  55 [chromium] › homepage.spec.ts:201:7 › Homepage - content links › clicking a "Latest additions" product opens its product page (retry #1) (19.2s)
+◇ injected env (0) from .env
+  ok 57 [chromium] › homepage.spec.ts:220:7 › Homepage - content links › "Some of our brands" slider links to every brand page (retry #1) (10.3s)
+  ok 60 [chromium] › homepage.spec.ts:249:7 › Homepage - content links › clicking the first visible product category opens the category page (11.7s)
+  ok 59 [chromium] › homepage.spec.ts:239:7 › Homepage - content links › "Product categories" slider links to every category page (13.5s)
+  x  56 [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Reseller account" opens /mio-account/ (retry #1) (32.2s)
+  ok 61 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Shipping and returns" opens /spedizioni-e-resi/ (6.3s)
+  x  58 [chromium] › homepage.spec.ts:231:7 › Homepage - content links › clicking the first brand in the slider opens the brand page (retry #1) (18.8s)
+  ok 62 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Payment Methods" opens /metodi-di-pagamento/ (7.9s)
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+  ok 64 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Register as a partner" opens /registrati-come-partner/ (13.0s)
+  ok 65 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Register as a reseller" opens /registrati-come-rivenditore/ (15.3s)
+  ok 66 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Terms and conditions" opens /termini-e-condizioni/ (15.4s)
+  x  63 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Certificates" opens /certificati/ (19.8s)
+  ok 67 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Map of Dealers" opens /rivenditori/ (12.6s)
+  ok 68 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "My account" opens /mio-account/ (11.7s)
+◇ injected env (0) from .env
+  ok 70 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Privacy Policy" opens /privacy-policy-2/ (9.2s)
+  ok 71 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Cookie Policy" opens /cookie-policy/ (11.0s)
+  ok 72 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Certificates" opens /certificati/ (retry #1) (12.2s)
+  ok 73 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Company Data" opens /dati-societari/ (9.6s)
+  ok 74 [chromium] › homepage.spec.ts:276:7 › Homepage - footer › footer contact block shows address, phone and e-mail (8.0s)
+  ok 75 [chromium] › homepage.spec.ts:284:7 › Homepage - footer › footer phone number has a correct tel: link (8.4s)
+  x  69 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Contacts" opens /contatti/ (25.5s)
+◇ injected env (0) from .env
+  ok 78 [chromium] › homepage.spec.ts:310:7 › Homepage - footer › footer Instagram icon links to the PiercingMed Instagram profile in a new tab (7.0s)
+  ok 79 [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Contacts" opens /contatti/ (retry #1) (7.2s)
+  x  77 [chromium] › homepage.spec.ts:302:7 › Homepage - footer › footer Facebook icon links to a Facebook page (16.9s)
+  ok 80 [chromium] › homepage.spec.ts:330:7 › Homepage - WhatsApp chat button › WhatsApp button is visible and opens / closes the chat panel (7.4s)
+  x  76 [chromium] › homepage.spec.ts:293:7 › Homepage - footer › footer e-mail has a correct mailto: link (19.1s)
+◇ injected env (0) from .env
+  x  81 [chromium] › homepage.spec.ts:343:7 › Homepage - WhatsApp chat button › "Send" opens WhatsApp for the PiercingMed number with the typed message (14.6s)
+◇ injected env (0) from .env
+  x  82 [chromium] › homepage.spec.ts:293:7 › Homepage - footer › footer e-mail has a correct mailto: link (retry #1) (16.3s)
+  ok 83 [chromium] › homepage.spec.ts:343:7 › Homepage - WhatsApp chat button › "Send" opens WhatsApp for the PiercingMed number with the typed message (retry #1) (6.2s)
+
+
+  1) [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Hygiene" opens /categoria-prodotto/hygiene-and-supplies/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        19 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---header-bed5e-dotto-hygiene-and-supplies--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare page banner" opens /aftercare-page/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-78367-anner-opens-aftercare-page--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › homepage.spec.ts:201:7 › Homepage - content links › clicking a "Latest additions" product opens its product page 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.jet-woo-products__item:not(.slick-cloned) .jet-woo-product-title a').first()
+        - locator resolved to <a tabindex="-1" rel="bookmark" href="https://piercingmed.com/prodotto/the-twin-pendulo-chiquito/">…</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <section data-id="0fc83c9" data-e-type="section" data-element_type="section" class="elementor-section elementor-top-section elementor-element elementor-element-0fc83c9 elementor-section-boxed elementor-section-height-default elementor-section-height-default">…</section> intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <section data-id="0fc83c9" data-e-type="section" data-element_type="section" class="elementor-section elementor-top-section elementor-element elementor-element-0fc83c9 elementor-section-boxed elementor-section-height-default elementor-section-height-default">…</section> intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <nav role="navigation" class="navbar navbar-custom navbar-fixed-top navbar-scroll-point">…</nav> from <header class="header ">…</header> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <section data-id="0fc83c9" data-e-type="section" data-element_type="section" class="elementor-section elementor-top-section elementor-element elementor-element-0fc83c9 elementor-section-boxed elementor-section-height-default elementor-section-height-default">…</section> intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <nav role="navigation" class="navbar navbar-custom navbar-fixed-top navbar-scroll-point">…</nav> from <header class="header ">…</header> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is not stable
+      9 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - element is outside of the viewport
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is not stable
+      8 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - element is outside of the viewport
+      - retrying click action
+        - waiting 500ms
+
+
+      203 |     await product.scrollIntoViewIfNeeded();
+      204 |     const href = (await product.getAttribute('href')) as string;
+    > 205 |     await product.click();
+          |                   ^
+      206 |     await expect.poll(() => currentPath(page)).toBe(new URL(href).pathname);
+      207 |     await expect(page.locator('body')).toHaveClass(/single-product/);
+      208 |   });
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:205:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-eb0ec-duct-opens-its-product-page-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Reseller account" opens /mio-account/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-f82f3--account-opens-mio-account--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › homepage.spec.ts:231:7 › Homepage - content links › clicking the first brand in the slider opens the brand page 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-6bc6c-slider-opens-the-brand-page-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › homepage.spec.ts:293:7 › Homepage - footer › footer e-mail has a correct mailto: link 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:263:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        23 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:263:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---footer-2459d-l-has-a-correct-mailto-link-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "CLAP!" opens /espositore-clap/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        19 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-3d2bd-CLAP-opens-espositore-clap--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---header-3d2bd-CLAP-opens-espositore-clap--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-3d2bd-CLAP-opens-espositore-clap--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---header-3d2bd-CLAP-opens-espositore-clap--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Piercing" dropdown lists working sub-menu links 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        21 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-d9ad5-ists-working-sub-menu-links-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---header-d9ad5-ists-working-sub-menu-links-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-d9ad5-ists-working-sub-menu-links-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---header-d9ad5-ists-working-sub-menu-links-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Equipment" dropdown lists working sub-menu links 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-6da2d-ists-working-sub-menu-links-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---header-6da2d-ists-working-sub-menu-links-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---header-6da2d-ists-working-sub-menu-links-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---header-6da2d-ists-working-sub-menu-links-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [chromium] › homepage.spec.ts:129:7 › Homepage - search › search icon reveals the search field 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        21 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---search-25132-on-reveals-the-search-field-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---search-25132-on-reveals-the-search-field-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---search-25132-on-reveals-the-search-field-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---search-25132-on-reveals-the-search-field-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [chromium] › homepage.spec.ts:136:7 › Homepage - search › searching for "ring" returns matching products 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---search-d03f2-g-returns-matching-products-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---search-d03f2-g-returns-matching-products-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---search-d03f2-g-returns-matching-products-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---search-d03f2-g-returns-matching-products-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [chromium] › homepage.spec.ts:147:7 › Homepage - search › clicking a search result opens its product page 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        21 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---search-5954b-sult-opens-its-product-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---search-5954b-sult-opens-its-product-page-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---search-5954b-sult-opens-its-product-page-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---search-5954b-sult-opens-its-product-page-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare banner" opens /categoria-prodotto/aftercare/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        21 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-54c0d-tegoria-prodotto-aftercare--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-54c0d-tegoria-prodotto-aftercare--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-54c0d-tegoria-prodotto-aftercare--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-54c0d-tegoria-prodotto-aftercare--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [chromium] › homepage.spec.ts:220:7 › Homepage - content links › "Some of our brands" slider links to every brand page 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        22 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:169:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-b410a-r-links-to-every-brand-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---conten-b410a-r-links-to-every-brand-page-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---conten-b410a-r-links-to-every-brand-page-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---conten-b410a-r-links-to-every-brand-page-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Certificates" opens /certificati/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        21 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:263:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-14a5a-ificates-opens-certificati--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---footer-14a5a-ificates-opens-certificati--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-14a5a-ificates-opens-certificati--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---footer-14a5a-ificates-opens-certificati--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Contacts" opens /contatti/ 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        21 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:263:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-6601b-nk-Contacts-opens-contatti--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---footer-6601b-nk-Contacts-opens-contatti--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---footer-6601b-nk-Contacts-opens-contatti--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---footer-6601b-nk-Contacts-opens-contatti--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [chromium] › homepage.spec.ts:343:7 › Homepage - WhatsApp chat button › "Send" opens WhatsApp for the PiercingMed number with the typed message 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('html')
+    Expected pattern: /translated-ltr/
+    Received string:  ""
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('html') with timeout 10000ms
+      - waiting for locator('html')
+        23 × locator resolved to <html class="" lang="it-IT">…</html>
+           - unexpected value ""
+
+
+       at pages\HomePage.ts:89
+
+      87 |     await this.englishFlag.scrollIntoViewIfNeeded();
+      88 |     await this.englishFlag.click();
+    > 89 |     await expect(this.page.locator('html')).toHaveClass(/translated-ltr/);
+         |                                             ^
+      90 |     await expect(this.menuLink('/chi-siamo/')).toHaveText('Who We Are');
+      91 |   }
+      92 |
+        at HomePage.switchToEnglish (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:89:45)
+        at HomePage.open (C:\Users\katja\Piercingmed_tests\pages\HomePage.ts:77:5)
+        at C:\Users\katja\Piercingmed_tests\homepage.spec.ts:327:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---WhatsA-df2c6-mber-with-the-typed-message-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\homepage-Homepage---WhatsA-df2c6-mber-with-the-typed-message-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\homepage-Homepage---WhatsA-df2c6-mber-with-the-typed-message-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\homepage-Homepage---WhatsA-df2c6-mber-with-the-typed-message-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6 failed
+    [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "Hygiene" opens /categoria-prodotto/hygiene-and-supplies/ 
+    [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare page banner" opens /aftercare-page/ 
+    [chromium] › homepage.spec.ts:201:7 › Homepage - content links › clicking a "Latest additions" product opens its product page 
+    [chromium] › homepage.spec.ts:211:9 › Homepage - content links › reseller block button "Reseller account" opens /mio-account/ 
+    [chromium] › homepage.spec.ts:231:7 › Homepage - content links › clicking the first brand in the slider opens the brand page 
+    [chromium] › homepage.spec.ts:293:7 › Homepage - footer › footer e-mail has a correct mailto: link 
+  11 flaky
+    [chromium] › homepage.spec.ts:81:9 › Homepage - header and main menu › main menu "CLAP!" opens /espositore-clap/ 
+    [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Piercing" dropdown lists working sub-menu links 
+    [chromium] › homepage.spec.ts:91:9 › Homepage - header and main menu › "Equipment" dropdown lists working sub-menu links 
+    [chromium] › homepage.spec.ts:129:7 › Homepage - search › search icon reveals the search field ─
+    [chromium] › homepage.spec.ts:136:7 › Homepage - search › searching for "ring" returns matching products 
+    [chromium] › homepage.spec.ts:147:7 › Homepage - search › clicking a search result opens its product page 
+    [chromium] › homepage.spec.ts:183:9 › Homepage - content links › banner "Aftercare banner" opens /categoria-prodotto/aftercare/ 
+    [chromium] › homepage.spec.ts:220:7 › Homepage - content links › "Some of our brands" slider links to every brand page 
+    [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Certificates" opens /certificati/ 
+    [chromium] › homepage.spec.ts:267:9 › Homepage - footer › footer link "Contacts" opens /contatti/ 
+    [chromium] › homepage.spec.ts:343:7 › Homepage - WhatsApp chat button › "Send" opens WhatsApp for the PiercingMed number with the typed message 
+  49 passed (6.6m)

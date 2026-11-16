@@ -100,7 +100,7 @@ export class ProductDetailPage {
     this.page = page;
     this.title = page.locator('h1').first();
     this.swatches = page.locator('table.variations li[data-value]');
-    // "Measure" label cell; the selected option is appended to it as ": <option>".
+    // Attribute label cell ("Measure", "Gauge", ... depending on the product); the selected option is appended to it as ": <option>".
     this.measure = page.locator('table.variations th.label');
     this.tabLinks = page.locator('.woocommerce-tabs ul.tabs a');
     this.related = page.locator('section.related');
